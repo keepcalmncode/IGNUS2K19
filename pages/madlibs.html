@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CTM - Mad Libs Theatre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+
+    <link rel="stylesheet" href="../styles/civilctm.css">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+  
+    
+    
+      
+    <div class="site-blocks-cover overlay" style="background-image: url(../img/thea.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 text-center" data-aos="fade">
+            <h1 class="mb-4">Mad Libs Theatre </h1>
+            <h2 class="mb-4" style="color: #fff;">&mdash; Left or Right, Laugh or Cry. </h2>
+        </div>
+      </div>
+    </div>  
+   </div>
+      
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mx-auto text-left section-heading">
+            <h2 class="mb-5 text-uppercase">About The Event</h2>
+          </div>
+        </div>
+       
+            <p style="font-size:120%;">Each team will be handed over a script with a few words missing.<br>
+            The participants must fill the blanks with a subsequent answers( like a noun, a weird word, a verb ending with 'ing'). </p>
+          </div>
+       <br>
+       <br>
+
+
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-1 section-heading">
+            <h2 class="mb-1 text-uppercase">Rules</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-lg-4">
+            <div class="text-center p-4 item">
+              <span class="flaticon-paper-plane display-3 mb-3 d-block text-primary"></span>
+              <p style="font-size:120%;">Each Team should contian 2 participants. Single round and time limit game. Best act will be considered as a winner.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <div class="text-center p-4 item">
+              <span class="flaticon-speaker display-3 mb-3 d-block text-primary"></span>
+              <p style="font-size:120%;">Each script will have an emotion written on it,participants must then enact their scripts with that emotion within a minute.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <div class="text-center p-4 item">
+              <span class="flaticon-chat-1 display-3 mb-3 d-block text-primary"></span>
+              <p style="font-size:120%;">The registration fee is 50 Rupees per team.</p>
+            </div>
+          </div>
+
+        </div>
+          <p align="center"><a href="./register.html" class="btn btn-primary px-4 py-2" style="background-color:black; color:white;">Regitser Now</a></p>
+
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+            <h2 class="mb-5 text-uppercase">Coordinators</h2>
+          </div>
+        </div>
+        <div class="row" style="margin-left: 10%;">
+          <div class="col-md-8 col-lg-5">
+            <div class="text-center ">
+              <h2 class="h5 text-uppercase">Faculty Coordinators</h2>
+              <p style="font-size:120%;">Nawaf: 8105132331 <br>
+               Amrutha: 8892433690</p>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-lg-5">
+            <div class="text-center ">
+              <h2 class="h5 text-uppercase">Student Coordinators</h2>
+              <p style="font-size:120%;">Pruthvi: 9008692463 <br>
+                 Shivangi: 9738420705 <br>
+                Rashmi: 9900972976</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+              </div>
+      </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="../scripts/civilctm.js"></script>
+    
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+                var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+                for (var i = 0; i < total; i++) {
+                    new MediaElementPlayer(mediaElements[i], {
+                        pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+                        shimScriptAccess: 'always',
+                        success: function () {
+                            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+                            for (var j = 0; j < targetTotal; j++) {
+                                target[j].style.visibility = 'visible';
+                            }
+                  }
+                });
+                }
+            });
+    </script>
+
+  </body>
+</html>
