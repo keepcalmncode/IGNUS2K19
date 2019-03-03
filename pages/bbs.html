@@ -15,85 +15,212 @@
 
 	<!-- CSS
   ================================================== -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../styles/mtbase.css">
-	<link rel="stylesheet" href="../styles/skeleton.css">
-	<link rel="stylesheet" href="../styles/mtlayout.css">
-</head>
-<body>
-<!-- Primary Page Layout
-================================================== -->
+	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/starcss.css" />
+  </head>
 
-<header>
-<div class="service" id="service">
+  <body>
+    <style type="text/css">
+      
+    .title{
+      color: #DE4433;
+      font-size: 43px;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .neon {
+    color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+             text-align: center;
+             font-size: 43px;
+}
+  
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 50px;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+  text-decoration: none;
+}
+.rainbow-button:focus{
+  outline: none;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+    </style>
+    <svg class="hidden">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <title>arrow</title>
+        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+      </symbol>
+      <symbol id="icon-drop" viewBox="0 0 24 24">
+        <title>drop</title>
+        <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+      </symbol>
+    </svg>
     <div class="container">
-    
-        <div class="sixteen columns">
+      <h1 class="neon">BEG BORROW STEAL</h1>
+    </div>
+    <br><br>
+    <main>
+
+      <section class="content">
+
         
-         <h2 class="white">BEG, BORROW,STEAL</h2>
-         <hr class="white">
-         <div class="five columns alpha">
-         <img class="center circle scale-with-grid" id="rotate" src="../img/beg.png">
-         </div>
-         <div class="five columns alpha">
-         <img class="center circle scale-with-grid" id="rotate" src="../img/borrow.png">
-         </div>
-         <div class="five columns alpha">
-         <img class="center circle scale-with-grid" id="rotate" src="../img/steal.png">
-        </div>   
-    </div>
-</div>
-</header>
-<div class="team" id="team">
-    <div class="container">
-        <div class="sixteen columns">   
-         <h2>About the event</h2>
-         <hr>
-         <h3 class="left" style="font-family: monaco; font-size: 35px;"><br>Instructions:</h3>
-                  <p class="left">
-           <br>
-1.  Participants will be given a list of 20 items.<br><br>
-2.  They have to either Beg, Borrow or Steal those items within a time limit of 30 minutes.<br><br>
-3.  Each item listed will have specific points allotted.<br><br>
-4.  The team with highest point wins.<br><br>
+        <div class="grid grid--effect-vega">
+          <a href="#" class="grid__item grid__item--c1">
+            <div class="stack">
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__figure">
+                <img class="stack__img" src="../img/PUZZLE.png" alt="Image"/>
+              </div>
+            </div>
+            <div class="grid__item-caption">
+              <h3 class="grid__item-title">BEG</h3>
+            </div>
+          </a>
+          <a href="#" class="grid__item grid__item--c2">
+            <div class="stack">
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__figure">
+                <img class="stack__img" src="../img/WHEEL.png" alt="Image"/>
+              </div>
 
-         </p>
-         <h3 class="left" style="font-family: monaco; font-size: 35px;"><br>General Rules:</h3>
-                  <p class="left">
-           <br>1.Purchasing of items is not allowed.<br><br>
-            2. No use of vehicles.<br><br>
-            3.  Going out of the campus is prohibited.<br><br>
-            4.  Students from MT department are not allowed to participate.
-                </p>
-         <h3 class="left" style="font-family: monaco; font-size: 30px;"><br>Team size:</h3>
-                  <p class="left">
-           <br> 2 participants per team
-         </p>
-         <h3 class="left" style="font-family: monaco; font-size: 30px;"><br>Team size:</h3>
-                  <p class="left">
-           <br> 2 participants per team
-         </p>
-          <h3 class="left" style="font-family: monaco; font-size: 30px;"><br>Time limit: </h3>
-                  <p class="left">
-           <br> Maximum 30 minutes
-         </p>
-          <h3 class="left" style="font-family: monaco; font-size: 30px;"><br>Venue: </h3>
-                  <p class="left">
-           <br> skomething
-         </p>
-         </div>
-    </div>
-</div>
-<div id="portfolio">
-<div class="container">
-   <div class="sixteen columns">
-        <h2>Contact:</h2>
-         <hr>
-         <p class="center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-          <a href="./register.html"  class="btnprice">Register Now</a>  
-   </div>
-  </div>
-</div>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+            </div>
+            <div class="grid__item-caption">
+              <h3 class="grid__item-title">BORROW</h3>
+            </div>
+          </a>
+          <a href="#" class="grid__item grid__item--c3">
+            <div class="stack">
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__deco"></div>
+              <div class="stack__figure">
+                <img class="stack__img" src="../img/QNA.png" alt="Image"/>
+              </div>
+            </div>
+            <div class="grid__item-caption">
+              <h3 class="grid__item-title">STEAL</h3>
+            </div>
+          </a>
+        </div>  
+      </section>
+
+        <div class="container">
+          <h1>RULES & REGULATIONS </h1>
+          <ul>
+            <li>Participants will be given a list of 20 items.</li>
+            <li>They have to either Beg, Borrow or Steal those items within a time limit of 30 minutes.</li>
+            <li>Each item listed will have specific points allotted.</li>
+            <li>The team with highest point wins.</li>
+            <li>Purchasing of items is not allowed</li>
+            <li>No use of vehicles.</li>
+            <li>Going out of the campus is prohibited.</li>
+           <li>Students from MT department are not allowed to participate.</li>
+          </ul>
+          <h1>Time Limit<br></h1>
+          <p>&nbsp;&nbsp;Maximum 30 minutes.</p>
+        
+          <h1>Venue<br></h1>
+          <p>&nbsp;&nbsp;6<sup>th</sup> floor Seminar Hall, New Building. </p>
+          
+          <h1>Team Size<br></h1>
+          <p>&nbsp;&nbsp;Maximum 2 participants per team. </p>
+
+          <h1>Faculty Cordinators<br></h1>
+          <p><ol>
+            <li>xyz</li>
+              <li>xyz </li>
+          </ol>
+
+        
+          <h1>Student Cordinators<br></h1>
+          <p><ol>
+            <li>sfaefaeef | +918884500811</li>
+              <li>fdsfsrgs | +917406400777 </li>
+          </ol> </p>
+          <a href="./register.html" class="rainbow-button" alt="Register" style="margin-left: 37%"></a>
+          <br>
+        </div>
+    
+      <!-- Related demos -->
+      
+    </main>
+    <script src="../scripts/anime.min.js"></script>
+    <script src="../scripts/starjs.js"></script>
+    <script>
+    (function() {
+      [].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+        new VegaFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+        new CastorFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+        new HamalFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+        new PolarisFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+        new AlphardFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+        new AltairFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+        new RigelFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function(stackEl) {
+        new CanopusFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+        new PolluxFx(stackEl);
+      });
+      [].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+        new DenebFx(stackEl);
+      });
+    })();
+    </script>
 </body>
 </html>
