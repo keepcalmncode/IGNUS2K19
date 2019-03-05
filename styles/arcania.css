@@ -3792,11 +3792,11 @@ input, select, textarea {
 	}
 
 		#wrapper > section.intro > header {
-			transition: transform 1s ease;
+			transition: transform 3s ease;
 		}
 
 		#wrapper > section.intro > .content {
-			transition: transform 1s ease;
+			transition: transform 2s ease;
 		}
 
 		body.is-preload #wrapper > section.intro {
@@ -3814,7 +3814,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#wrapper > section.intro > header > * {
-				transition: transform 1s ease, opacity 1s ease;
+				transition: transform 3s ease, opacity 1s ease;
 			}
 
 			body.is-preload #wrapper > section.intro > header {
